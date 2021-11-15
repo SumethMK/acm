@@ -10,7 +10,7 @@ spec:
     scope: "Namespaced"
     namespaces: ["acm-demo"]
   parameters:
-    message: "All namespaces must have an `paotang` label that describes the deployment"
+    message: "All namespaces must have an `sabic` label that describes the deployment"
     labels:
-      - key: paotang
+      - key: sabic
         allowedRegex: "^[a-zA-Z]+$"
