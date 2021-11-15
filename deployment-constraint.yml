@@ -7,8 +7,8 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Deployment"]
-    scope: "Namespaced"
-    namespaces: ["acm-demo"]
+    #scope: "Namespaced"
+    #namespaces: ["acm-demo"]
   parameters:
     message: "All namespaces must have an `sabic` label that describes the deployment"
     labels:
