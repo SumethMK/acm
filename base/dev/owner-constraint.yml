@@ -8,7 +8,7 @@ spec:
       - apiGroups: [""]
         kinds: ["Namespace"]
   parameters:
-    message: "All namespaces must have an `owner` label that points to your company username"
+    message: "All namespaces must have an `owner dev` label that points to your company username"
     labels:
       - key: owner
         allowedRegex: "^[a-zA-Z]+"
