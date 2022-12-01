@@ -7,6 +7,6 @@ spec:
   sourceFormat: unstructured
   git:
    repo: https://github.com/SumethMK/sabb.git
-     revision: HEAD
-     branch: main
-     auth: none
+   revision: HEAD
+   branch: main
+   auth: none
