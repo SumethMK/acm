@@ -1,0 +1,12 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: sabb-repo-root-sync
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  git:
+   repo: https://github.com/SumethMK/sabb.git
+     revision: HEAD
+     branch: main
+     auth: none
