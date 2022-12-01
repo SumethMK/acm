@@ -1,0 +1,16 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: all-must-have-app-label
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Deployment"]
+    scope: "Namespaced"
+    namespaces: ["acm-demo"]
+  parameters:
+    message: "All namespaces must have an `sabic` label that describes the deployment"
+    labels:
+      - key: sabic
+        allowedRegex: "^[a-zA-Z]+$"
