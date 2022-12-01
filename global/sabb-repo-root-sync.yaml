@@ -6,7 +6,8 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-   repo: https://github.com/SumethMK/sabb.git
+   repo: https://github.com/SumethMK/acm.git
    revision: HEAD
    branch: main
+   dir: test
    auth: none
